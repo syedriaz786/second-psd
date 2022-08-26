@@ -11,6 +11,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="responsive.css" />
   <link href="./css/site.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- Site JavaScripts -->
   <script src="./js/jquery.js"></script>
   <script src="./js/site.min.js"></script>
@@ -33,6 +34,31 @@
 
 <body>
   <!-- HEADER -->
+
+  <div class="subs-pop-up position-fixed" id="popUp_win">
+    <div class="subs-form pb-5">
+      <div class="position-relative">
+        <header class="text-md-center text-start py-4 mb-5">Subscribtion Form</header>
+        <i class="bi bi-x position-absolute top-0 end-0 text-light py-3  pe-md-4 pe-1" onclick="hidePopUp()"></i>
+      </div>
+      <form action="index.html" class="form ">
+        <div class="input-group mb-3 ">
+          <input type="text" class="py-3 mt-2 m-auto" placeholder="Enter Your Name" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="email" class="py-3 m-auto" placeholder="Enter Your Email" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <button type="button" id="submit_subs" class="btn border-0 px-5 py-3 fs-4 m-auto border border-2 rounded"
+            onclick="hidePopUp()">Submit</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
 
   <header>
     <div class="row header-row">
@@ -149,8 +175,13 @@
           <p class="text-center">We are Leon - Super Creative & Minimal <br>
             Agency Web Template</p>
 
+          <div class="subs-div text-center mt-5 pt-5">
+            <button type="button" class="btn  fs-4 mt-5 px-5 py-3 " onclick="showPopUp()">Subscribtion</button>
+          </div>
         </div>
+
       </div>
+
     </div>
   </section>
 
@@ -181,6 +212,21 @@
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit, sed do eiusmod tempor <br>
                 incididunt ut lab</p>
+            </div>
+            <!-- <div class="info-div text-center my-5">
+              <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded">Read
+                More</button>
+              <button type="button" class="btn learn-btn px-5 py-3 fs-5 border border-2 rounded">Learn More</button>
+            </div> -->
+            <div class="info-div text-center my-5 pt-3">
+              <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded"><a
+                  href="services.html" class="text-decoration-none text-dark">Read More</a></button>
+              <div class="d-inline info-popup" onclick="infoPopUp()">
+                <button type="button" class="btn learn-btn info-popup px-5 py-3 fs-5 border border-2 rounded">Learn
+                  More</button>
+                <span class="info-popuptext" id="myPopup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                  aut praesentium atque accusantium cum explicabo quidem dolore dolorem distinctio harum?</span>
+              </div>
             </div>
           </div>
         </div>
@@ -263,6 +309,16 @@
               <img class="img-fluid bg-img position-absolute end-0 " src="assets/images/background.png" alt="">
             </div>
           </div>
+          <div class="info-div text-center my-5 pt-3">
+            <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded"><a
+                href="services.html" class="text-decoration-none text-dark">Read More</a></button>
+            <div class="d-inline info-popup" onclick="infoPopUp()">
+              <button type="button" class="btn learn-btn info-popup px-5 py-3 fs-5 border border-2 rounded">Learn
+                More</button>
+              <span class="info-popuptext" id="myPopup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                aut praesentium atque accusantium cum explicabo quidem dolore dolorem distinctio harum?</span>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -315,6 +371,21 @@
                   manifest in so many surprising and.</p>
               </div>
             </div>
+            <!-- <div class="info-div text-center my-5">
+              <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded">Read
+                More</button>
+              <button type="button" class="btn learn-btn px-5 py-3 fs-5 border border-2 rounded">Learn More</button>
+            </div> -->
+            <div class="info-div text-center my-5 pt-3">
+              <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded"><a
+                  href="services.html" class="text-decoration-none text-dark">Read More</a></button>
+              <div class="d-inline info-popup" onclick="infoPopUp()">
+                <button type="button" class="btn learn-btn info-popup px-5 py-3 fs-5 border border-2 rounded">Learn
+                  More</button>
+                <span class="info-popuptext" id="myPopup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                  aut praesentium atque accusantium cum explicabo quidem dolore dolorem distinctio harum?</span>
+              </div>
+            </div>
           </div>
 
 
@@ -357,6 +428,21 @@
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliqu</p>
             </div>
+            <!-- <div class="info-div text-center my-5">
+              <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded">Read
+                More</button>
+              <button type="button" class="btn learn-btn px-5 py-3 fs-5 border border-2 rounded">Learn More</button>
+            </div> -->
+            <div class="info-div text-center my-5 pt-3">
+              <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded"><a
+                  href="services.html" class="text-decoration-none text-dark">Read More</a></button>
+              <div class="d-inline info-popup" onclick="infoPopUp()">
+                <button type="button" class="btn learn-btn info-popup px-5 py-3 fs-5 border border-2 rounded">Learn
+                  More</button>
+                <span class="info-popuptext" id="myPopup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                  aut praesentium atque accusantium cum explicabo quidem dolore dolorem distinctio harum?</span>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -387,6 +473,21 @@
               <span class="mx-2 "><img src="assets/images/social-sport.png" alt=""></span>
               <span class="mx-2"><img src="assets/images/social-google.png" alt=""></span>
               <span class="mx-2"><img src="assets/images/social-twitter.png" alt=""></span>
+            </div>
+            <!-- <div class="info-div text-center my-5">
+              <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded">Read
+                More</button>
+              <button type="button" class="btn learn-btn px-5 py-3 fs-5 border border-2 rounded">Learn More</button>
+            </div> -->
+            <div class="info-div text-center my-5 pt-3">
+              <button type="button" class="btn read-btn px-5 py-3 fs-5 mx-sm-4 border border-2 rounded"><a
+                  href="services.html" class="text-decoration-none text-dark">Read More</a></button>
+              <div class="d-inline info-popup" onclick="infoPopUp()">
+                <button type="button" class="btn learn-btn info-popup px-5 py-3 fs-5 border border-2 rounded">Learn
+                  More</button>
+                <span class="info-popuptext" id="myPopup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                  aut praesentium atque accusantium cum explicabo quidem dolore dolorem distinctio harum?</span>
+              </div>
             </div>
           </div>
 

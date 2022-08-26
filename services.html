@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link href="./css/site.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Site JavaScripts -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/site.min.js"></script>
+
+    <!-- ma5menu -->
+    <link href="./css/ma5-menu.min.css" rel="stylesheet" type="text/css">
+    <script src="./js/ma5-menu.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            ma5menu({
+                menu: '.site-menu',
+                activeClass: 'active',
+                footer: '#ma5menu-tools',
+                position: 'left',
+                closeOnBodyClick: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <div class="subs-pop-up position-fixed" id="popUp_win">
+        <div class="subs-form pb-5">
+            <div class="position-relative">
+                <header class="text-md-center text-start py-4 mb-5">Subscribtion Form</header>
+                <i class="bi bi-x position-absolute top-0 end-0 text-light py-3  pe-md-4 pe-1"
+                    onclick="hidePopUp()"></i>
+            </div>
+            <form action="index.html" class="form ">
+                <div class="input-group mb-3 ">
+                    <input type="text" class="py-3 mt-2 m-auto" placeholder="Enter Your Name" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="email" class="py-3 m-auto" placeholder="Enter Your Email" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <button type="button" id="submit_subs"
+                        class="btn border-0 px-5 py-3 fs-4 m-auto border border-2 rounded"
+                        onclick="hidePopUp()">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <div class="row header-row">
+            <div class="col">
+                <div class="row ">
+
+
+                    <div class="col">
+                        <div class="logo my-4 me-5 pe-5 text-center ">
+                            <img src="assets/images/logo.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="col ">
+                        <div class="menu mt-5 ms-5 ps-5 text-center ma5menu__toggle">
+                            <img class="" src="assets/images/menu_bar.png" alt="">
+                        </div>
+
+                        <div style="display: none;">
+
+                            <!-- source for mobile menu start -->
+                            <ul class="site-menu">
+                                <li>
+                                    <a href="index.html">Shop</a>
+                                    <ul>
+                                        <li><a href="index.html">Products</a></li>
+                                        <li>
+                                            <a href="index.html">Collections</a>
+                                            <ul>
+                                                <li><a href="index.html">Premium</a></li>
+                                                <li><a href="index.html">Common</a></li>
+                                                <li>
+                                                    <a href="index.html">Exclusive</a>
+                                                    <ul>
+                                                        <li><a href="index.html">First</a></li>
+                                                        <li><a href="index.html">Secound</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="index.html">Other</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="index.html">Accesories</a>
+                                            <ul>
+                                                <li><a href="index.html">Small</a></li>
+                                                <li><a href="index.html">Medium</a></li>
+                                                <li><a href="index.html">Large</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="index.html">Cards</a></li>
+                                        <li>
+                                            <a href="index.html">Sets</a>
+                                            <ul>
+                                                <li><a href="index.html">Example 1</a></li>
+                                                <li><a href="index.html">Example 2</a></li>
+                                                <li><a href="index.html">Example 3</a></li>
+                                                <li><a href="index.html"><b>Example 4</b></a></li>
+                                                <li><a href="index.html">Example 5</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index.html">Lookbook</a>
+                                    <ul>
+                                        <li><a href="index.html">For business</a></li>
+                                        <li><a href="index.html">Premium Area</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index.html">Campaigns</a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">Summer 2019</a>
+                                            <ul>
+                                                <li><a href="index.html">Winter 2018</a></li>
+                                                <li><a href="index.html">Spring 2017</a></li>
+                                            </ul>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index.html">Brand</a>
+                                    <ul>
+                                        <li><a href="index.html">About us</a></li>
+                                        <li><a href="index.html">Press</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index.html">Contact</a></li>
+                            </ul>
+                            <!-- source for mobile menu end -->
+
+                            <!-- source for mobile menu footer start -->
+                            <!-- <div id="ma5menu-tools" class="ma5menu__tools">
+                footer <a href="index.html">content</a> here
+              </div> -->
+                            <!-- source for mobile menu footer end -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- SERVICE INFO -->
+
+
+    <section class="serivceinfo-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col heading-col">
+                    <h1 class="text-center my-5">Services</h1>
+                    <h2 class="mt-5 fw-bolder">Web Development</h2>
+                    <p>Our website developers provide expert web application development and web design services to our
+                        clients. Appnovation offers a variety of website design and development services, from creating
+                        mobile web development solutions and responsive website designs, to building custom e-commerce
+                        and
+                        intranet experiences using the latest and proven web technologies. With up to 85% of consumers
+                        visiting company’s or service provider’s website before making a purchase, more and more
+                        consumers
+                        make decisions based on their online experience: the appearance, usability and accessibility of
+                        your
+                        website is more important than ever, especially in an increasingly competitive market.</p>
+
+                    <h2 class="mt-5 fw-bolder">Web Desgin</h2>
+                    <p>We established our company in 2010 and have grown to become a leading PK’s Web Design and
+                        Development business with thousands of clients.
+
+                        We provide small to medium sized businesses with a full range of Web Services including high
+                        quality Custom Website Design, Website Development and Search Marketing services. Our clients
+                        range from small start-up businesses, to sizeable, brand recognizable organizations. Whatever
+                        your business, we will help it to perform better just like we’ve done for our clients.</p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container-fluid">
+
+            <div class="row footer-row">
+                <div class="col footer-col text-center ">
+                    <h4 class="py-4 mt-3"> © 2019 - <span>Leon</span>,All Right Reserved</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
